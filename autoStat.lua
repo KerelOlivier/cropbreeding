@@ -5,7 +5,7 @@ local function patrol()
 	print("patrolling")
 	local farmSpot = 1
 	while farmSpot < config.workingFarmArea do
-		while ~robot.forward() do end
+		while !robot.forward() do end
 		if farmSpot%config.workingFarmSize == 0 then
 			print("turn")
 			robot.turnLeft()
