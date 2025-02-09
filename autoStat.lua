@@ -10,7 +10,7 @@ local function patrol()
 			print("turn")
 			robot.turnLeft()
 			robot.forward()
-			robot.turnRight()
+			robot.turnLeft()
 		end
 		farmSpot = farmSpot + 1
 	end
