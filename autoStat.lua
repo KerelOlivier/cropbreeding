@@ -16,6 +16,7 @@ local function patrol()
 			robot.forward()
 			robot.turnLeft()
 		else
+			print("forward")
 			while not robot.forward() do end
 		end
 		farmSpot = farmSpot + 1
