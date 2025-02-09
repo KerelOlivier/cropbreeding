@@ -5,6 +5,7 @@ local function patrol()
 	print("patrolling")
 	local farmSpot = 1
 	while farmSpot < config.workingFarmArea do
+		print("spot:", farmSpot)
 		if farmSpot%(config.workingFarmArea*2) == 0 then
 			print("turn right")
 			robot.turnRight()
